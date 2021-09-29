@@ -10,10 +10,22 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    //　グローバル宣言
+    var CurrentVC = UIApplication.shared.windows.first { $0.isKeyWindow }?.rootViewController
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //windowを生成
+        let window = UIApplication.shared.windows.first { $0.isKeyWindow }
+        //Viewcontrollerを指定
+        let initialViewController = WikiViewController.startVC()
+        //rootViewControllerに入れる
+        window?.rootViewController = initialViewController
+        //表示
+        window?.makeKeyAndVisible()
+        
+        
         return true
     }
 

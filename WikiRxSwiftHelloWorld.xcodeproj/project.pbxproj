@@ -3,19 +3,28 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D5B92E0F3E06B31FFE100049 /* Pods_WikiRxSwiftHelloWorld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 580C1684906892AC31143900 /* Pods_WikiRxSwiftHelloWorld.framework */; };
 		DD0BBC5726FF1C14003FF07E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BBC5626FF1C14003FF07E /* AppDelegate.swift */; };
 		DD0BBC5926FF1C14003FF07E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BBC5826FF1C14003FF07E /* SceneDelegate.swift */; };
 		DD0BBC5B26FF1C14003FF07E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BBC5A26FF1C14003FF07E /* ViewController.swift */; };
 		DD0BBC5E26FF1C14003FF07E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0BBC5C26FF1C14003FF07E /* Main.storyboard */; };
 		DD0BBC6026FF1C1F003FF07E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD0BBC5F26FF1C1F003FF07E /* Assets.xcassets */; };
 		DD0BBC6326FF1C1F003FF07E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0BBC6126FF1C1F003FF07E /* LaunchScreen.storyboard */; };
+		DD0BBC7427006291003FF07E /* WikiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BBC7327006290003FF07E /* WikiRequest.swift */; };
+		DD0BBC772700629A003FF07E /* EntityDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BBC7627006299003FF07E /* EntityDataParser.swift */; };
+		DD0BBC7A2700633C003FF07E /* WikiEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BBC792700633C003FF07E /* WikiEntity.swift */; };
+		DD0BBC7D27006522003FF07E /* WikiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0BBC7C27006522003FF07E /* WikiViewController.swift */; };
+		DD0BBC80270065C0003FF07E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD0BBC7F270065C0003FF07E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EDBEAD3939B702A7115EF06 /* Pods-WikiRxSwiftHelloWorld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiRxSwiftHelloWorld.debug.xcconfig"; path = "Target Support Files/Pods-WikiRxSwiftHelloWorld/Pods-WikiRxSwiftHelloWorld.debug.xcconfig"; sourceTree = "<group>"; };
+		580C1684906892AC31143900 /* Pods_WikiRxSwiftHelloWorld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WikiRxSwiftHelloWorld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC28F84AE0BB5D5D4C4561E0 /* Pods-WikiRxSwiftHelloWorld.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WikiRxSwiftHelloWorld.release.xcconfig"; path = "Target Support Files/Pods-WikiRxSwiftHelloWorld/Pods-WikiRxSwiftHelloWorld.release.xcconfig"; sourceTree = "<group>"; };
 		DD0BBC5326FF1C14003FF07E /* WikiRxSwiftHelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiRxSwiftHelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD0BBC5626FF1C14003FF07E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD0BBC5826FF1C14003FF07E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		DD0BBC5F26FF1C1F003FF07E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD0BBC6226FF1C1F003FF07E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD0BBC6426FF1C1F003FF07E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD0BBC7327006290003FF07E /* WikiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WikiRequest.swift; path = /Users/yasushisaitoh/git/iOS/WikiRxSwiftHelloWorld/WikiRxSwiftHelloWorld/WikiRequest.swift; sourceTree = "<absolute>"; };
+		DD0BBC7627006299003FF07E /* EntityDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EntityDataParser.swift; path = /Users/yasushisaitoh/git/iOS/WikiRxSwiftHelloWorld/WikiRxSwiftHelloWorld/EntityDataParser.swift; sourceTree = "<absolute>"; };
+		DD0BBC792700633C003FF07E /* WikiEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiEntity.swift; sourceTree = "<group>"; };
+		DD0BBC7C27006522003FF07E /* WikiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiViewController.swift; sourceTree = "<group>"; };
+		DD0BBC7F270065C0003FF07E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5B92E0F3E06B31FFE100049 /* Pods_WikiRxSwiftHelloWorld.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B28D49633A12268B9169821 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				580C1684906892AC31143900 /* Pods_WikiRxSwiftHelloWorld.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD0BBC4A26FF1C14003FF07E = {
 			isa = PBXGroup;
 			children = (
 				DD0BBC5526FF1C14003FF07E /* WikiRxSwiftHelloWorld */,
 				DD0BBC5426FF1C14003FF07E /* Products */,
+				F4724633D724BDBA76AB1427 /* Pods */,
+				5B28D49633A12268B9169821 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +81,9 @@
 		DD0BBC5526FF1C14003FF07E /* WikiRxSwiftHelloWorld */ = {
 			isa = PBXGroup;
 			children = (
+				DD0BBC7627006299003FF07E /* EntityDataParser.swift */,
+				DD0BBC7327006290003FF07E /* WikiRequest.swift */,
+				DD0BBC792700633C003FF07E /* WikiEntity.swift */,
 				DD0BBC5626FF1C14003FF07E /* AppDelegate.swift */,
 				DD0BBC5826FF1C14003FF07E /* SceneDelegate.swift */,
 				DD0BBC5A26FF1C14003FF07E /* ViewController.swift */,
@@ -63,8 +91,19 @@
 				DD0BBC5F26FF1C1F003FF07E /* Assets.xcassets */,
 				DD0BBC6126FF1C1F003FF07E /* LaunchScreen.storyboard */,
 				DD0BBC6426FF1C1F003FF07E /* Info.plist */,
+				DD0BBC7C27006522003FF07E /* WikiViewController.swift */,
+				DD0BBC7F270065C0003FF07E /* Main.storyboard */,
 			);
 			path = WikiRxSwiftHelloWorld;
+			sourceTree = "<group>";
+		};
+		F4724633D724BDBA76AB1427 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EDBEAD3939B702A7115EF06 /* Pods-WikiRxSwiftHelloWorld.debug.xcconfig */,
+				BC28F84AE0BB5D5D4C4561E0 /* Pods-WikiRxSwiftHelloWorld.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD0BBC6726FF1C1F003FF07E /* Build configuration list for PBXNativeTarget "WikiRxSwiftHelloWorld" */;
 			buildPhases = (
+				22F63EF0E5F3FBCC330223A8 /* [CP] Check Pods Manifest.lock */,
 				DD0BBC4F26FF1C14003FF07E /* Sources */,
 				DD0BBC5026FF1C14003FF07E /* Frameworks */,
 				DD0BBC5126FF1C14003FF07E /* Resources */,
+				8A1E9EB41AD15990A51B6C0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,19 +168,66 @@
 				DD0BBC6326FF1C1F003FF07E /* LaunchScreen.storyboard in Resources */,
 				DD0BBC6026FF1C1F003FF07E /* Assets.xcassets in Resources */,
 				DD0BBC5E26FF1C14003FF07E /* Main.storyboard in Resources */,
+				DD0BBC80270065C0003FF07E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22F63EF0E5F3FBCC330223A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WikiRxSwiftHelloWorld-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A1E9EB41AD15990A51B6C0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WikiRxSwiftHelloWorld/Pods-WikiRxSwiftHelloWorld-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WikiRxSwiftHelloWorld/Pods-WikiRxSwiftHelloWorld-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WikiRxSwiftHelloWorld/Pods-WikiRxSwiftHelloWorld-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD0BBC4F26FF1C14003FF07E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD0BBC772700629A003FF07E /* EntityDataParser.swift in Sources */,
 				DD0BBC5B26FF1C14003FF07E /* ViewController.swift in Sources */,
+				DD0BBC7427006291003FF07E /* WikiRequest.swift in Sources */,
 				DD0BBC5726FF1C14003FF07E /* AppDelegate.swift in Sources */,
+				DD0BBC7A2700633C003FF07E /* WikiEntity.swift in Sources */,
 				DD0BBC5926FF1C14003FF07E /* SceneDelegate.swift in Sources */,
+				DD0BBC7D27006522003FF07E /* WikiViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +371,7 @@
 		};
 		DD0BBC6826FF1C1F003FF07E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EDBEAD3939B702A7115EF06 /* Pods-WikiRxSwiftHelloWorld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +391,7 @@
 		};
 		DD0BBC6926FF1C1F003FF07E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC28F84AE0BB5D5D4C4561E0 /* Pods-WikiRxSwiftHelloWorld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
